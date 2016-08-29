@@ -1,24 +1,55 @@
 body{
   background-image: url(../img/space.jpg);
 }
+p{
+  color :white;
+}
 
 h1{
   color: white;
   text-align: right;
 }
-
-.tus{
+.logo{
   text-align:center;
-  position:fixed;
-  padding-top:300px;
-  left: 800px;
+  margin: auto;
+  margin-top:200px;
 }
-
-.rotate{
-  padding-top:300px;
-  position:fixed;
-  text-align:center;
-  margin:auto;
-  left: 750px;
-  top: 25px;
+.absolute{
+  position: absolute;
+  margin-left: -75px;
+  margin-top: -75px;
+}
+.rotate {
+   animation:rotateZ 3s linear 0s infinite;
+}
+.tuswrap {
+  margin-left: -200px;
+  margin-top: 0px;
+}
+@keyframes rotateZ {
+    0% {
+        -webkit-transform:rotateZ(0deg);
+        -moz-transform:rotateZ(0deg);
+        transform:rotateX(60deg) rotateZ(0deg);
+    }
+    25% {
+        -webkit-transform:rotateZ(90deg);
+        -moz-transform:rotateZ(90deg);
+        transform:rotateX(60deg) rotateZ(90deg);
+    }
+    50% {
+        -webkit-transform:rotateZ(180deg);
+        -moz-transform:rotateZ(180deg);
+        transform:rotateX(60deg) rotateZ(180deg);
+    }
+    75% {
+        -webkit-transform:rotateZ(270deg);
+        -moz-transform:rotateZ(270deg);
+        transform:rotateX(60deg) rotateZ(270deg);
+    }
+    100% {
+        -webkit-transform:rotateZ(360deg);
+        -moz-transform:rotateZ(360deg);
+        transform:rotateX(60deg) rotateZ(360deg);
+    }
 }

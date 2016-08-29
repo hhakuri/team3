@@ -7,12 +7,21 @@
     <link rel="stylesheet" href="../css/style.css" media="screen" title="no title" charset="utf-8">
   </head>
   <body>
-    <div class="container-fluid">
     <h1>tus-i</h1>
+    <p>取得したブラウザ情報</p>
+<script type="text/javascript">
+	with(document) {
+	write("<p>AGENT"+navigator.userAgent,+"</p>");
+	write("<p>BROWSER: "+navigator.appName+"</p>");
+	write("<p>VERSION: "+parseInt(navigator.appVersion)+"</p>");
+	write("<p>CODE: "+navigator.appCodeName+"</p>");
+	write("<p>COOKIES: "+navigator.cookieEnabled+"</p>");
+	}
+</script>
     <div class="logo">
-    <img src="../img/logo2.png" alt="" width="300" class="rotate"/>
-    <img src="../img/tus.png" alt=""  width="200" class="tus"/>
+    <img src="../img/logo2.png" alt="" width="350" class="absolute rotate"/>
+    <img src="../img/tus.png" alt=""  width="200"/>
+    <img src="../img/tus2.png" alt=""  width="200" class="absolute tuswrap" />
   </div>
-</div>
   </body>
 </html>
