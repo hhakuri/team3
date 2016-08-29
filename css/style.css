@@ -1,0 +1,19 @@
+body{
+  background-image: url(../img/space.jpg);
+}
+
+h1{
+  color: white;
+  text-align: right;
+}
+
+.logo{
+  text-align:center;
+  margin: auto;
+  padding-top:300px;
+  position: relative;
+}
+
+.absolute{
+  position: absolute;
+}
